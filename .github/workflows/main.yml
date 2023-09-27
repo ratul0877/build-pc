@@ -12,8 +12,7 @@ steps:
 
 run: Invoke-WebRequest
 
-https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-
-amd64.zip -OutFile ngrok.zip
+https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
 
 - name: Extract
 
@@ -39,7 +38,7 @@ Desktop"
 Server\WinStations\RDP-Tcp' -name "UserAuthentication" -
 Value 1
 
-- run: Set-LocalUser -Name "ratul" -Password
+- run: Set-LocalUser -Name "runneradmin" -Password
 (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
 - name: Create Tunnel
 
